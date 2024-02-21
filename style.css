@@ -1,3 +1,24 @@
+:root {
+  --primaryColor: #ff725e;
+  --secondaryColor: #ff9a6c;
+  --darkColor: #263238;
+  --ligthColor: #fff;
+  --footer-bg: rgba(255, 154, 108, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html::-webkit-scrollbar {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--darkColor);
+}
+
 #duvidas {
     display: flex;
     align-items: center;
@@ -10,7 +31,7 @@
   }
   
   #duvidas .duvida h3 {
-    border: 2px solid #252525;
+    border: 2px solid var(--primaryColor);
     border-radius: 8px;
     cursor: pointer;
     padding: 24px 40px 24px 24px;
@@ -29,9 +50,9 @@
   }
   
   #duvidas .duvida .paragrafo {
-    border-right: 1px solid #252525;
-    border-left: 1px solid #252525;
-    border-bottom: 1px solid #252525;
+    border-right: 1px solid var(--primaryColor);
+    border-left: 1px solid var(--primaryColor);
+    border-bottom: 1px solid var(--primaryColor);
     border-radius: 0 0 8px 8px;
     margin-top: -8px;
     padding: 0 24px;
